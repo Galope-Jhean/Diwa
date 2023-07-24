@@ -134,7 +134,7 @@ $username = $_SESSION['username'];
                 UPDATE
             </button>
             <button type="button" onclick="window.location.href='diary.php'" class="updaterr">
-                CLEAR
+                CLOSE
             </button>
             <?php } else { ?>
                 <input type="submit" value="+" class="createThis">
