@@ -1,4 +1,5 @@
 # Diwa App
+## OOP Project
 
 Diwa is a web application that allows users to keep a digital diary. It provides a simple and intuitive interface for users to create, view, edit, and delete diary entries. The app is built using PHP, MySQL, and JavaScript.
 
