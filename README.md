@@ -27,8 +27,4 @@ To run the Diwa app locally, follow these steps:
 - MySQL
 - Web Server (e.g., Apache, Nginx)
 
-## Contributing
-
-Contributions to the Diwa app are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
-
 ---
