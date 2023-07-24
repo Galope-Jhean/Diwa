@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@800&display=swap');
+
+
+@keyframes transitionIn {
+    from{
+        opacity: 0.6;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0; /* Start with an invisible background */
+    }
+    to {
+        opacity: 1; /* Fade to fully visible background */
+    }
+}
+
+body{
+    animation: transitionIn 0.7s;
+    animation: fadeInBackground 0.7s;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(DIWA/LOGOS/bg.jpg);
+        background-size: cover;
+        opacity: 0.08;
+        z-index: -1;
+    }
+}
+.container {
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Use space-between to push the logo and button to the opposite ends */
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    margin-top: -470px;
+}
+
+.logo-container {
+    flex: 1; /* This will make the logo take up available space and push the button to the right */
+}
+
+.logo-container{
+    cursor: pointer;
+}
+
+.logo-container img{
+    margin-left: -50px;
+    width: 250px;
+    height: 300px;
+}
+
+.registration-page{
+    margin-top: -35px;
+}
+
+
+.navbar button{
+    display: block;
+    width: 131px;
+    height: 47px;
+    flex-shrink: 0;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #6D9886;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    margin-right: 20px;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+img{
+    width: 388px;
+    height: 380px;
+    user-select: none;
+}
+
+.app-desc{
+    color: #000000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -130px;
+    text-align: center;
+    user-select: none;
+}
+
+
+form input[type="text"]{
+    margin-top: 30px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 354px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 354px;
+    height: 47px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #6D9886;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    margin-top: 30px;
+}
+
+form input[type="submit"]:hover, .navbar button:hover{
+    background-color: #517264;
+    transition: 0.3s;
+}
+
+.registerBtn{
+    margin-top: 1rem;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.register{
+    margin-top: 30px;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.create-link{
+    margin-top: 5px;
+    color: #6D9886;
+}
+
+.create-link:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+}
