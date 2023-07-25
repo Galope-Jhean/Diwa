@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: diary.php");
         exit;
     } else {
-        $login_error = "hello";
+        $login_error = "Invalid username or password.";
     }
 }
 ?>
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <img src="diwa/logos/3.png" alt="Diwa Logo">
         <p class="app-desc"> Embrace Life's Journey, One Entry at a Time!</p>
         <?php if (isset($login_error)) : ?>
-           <p class="error-message"><?php echo "<script>alert('login failed')</script>" ?></p>
+            <script>alert('<?php echo $login_error; ?>');</script>
         <?php endif; ?>
         <form action="login.php" method="POST">
             <input type="text" name="username" placeholder="Enter Username" required>
@@ -57,5 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="register.php" class="create-link">Create Account</a>
         </p>
     </div>
+    <script src="scripts/login.js"></script>
 </body>
 </html>

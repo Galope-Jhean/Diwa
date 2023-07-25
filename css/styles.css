@@ -49,7 +49,7 @@ body{
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-image: url(DIWA/LOGOS/bg.jpg);
+        background-image: url(/DIWA/LOGOS/background.jpg);
         background-size: cover;
         opacity: 0.08;
         z-index: -1;

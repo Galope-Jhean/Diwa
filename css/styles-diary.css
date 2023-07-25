@@ -137,7 +137,11 @@ textarea{
     display: flex; /* Add display:flex to the list items */
     flex-direction: column; /* Arrange content vertically */
     justify-content: space-between; /* Align elements vertically */
-    flex: 1;
+    flex: 1;   
+}
+
+.notes li p{
+    word-wrap: break-word;
 }
 
 .notes li h3,
@@ -196,6 +200,7 @@ textarea{
 .notes ul{
     display: flex;
     flex-wrap: wrap;
+    word-wrap: break-word;
     justify-content: space-between;
     gap: 10px;
     flex-grow: 1;

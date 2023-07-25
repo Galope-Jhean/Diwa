@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </nav>
     <div class="container">
         <img src="diwa/logos/3.png" alt="Diwa Logo">
-        <p class="app-desc"> Embrace Life's Journey, One Entry at a Time!</p>
+        <p class="app-desc">Embrace Life's Journey, One Entry at a Time!</p>
         <form action="register.php" method="POST">
             <input type="text" name="username" placeholder="Enter Username" required>
             <input class="p1" type="password" name="password" placeholder="Enter Password" required>
