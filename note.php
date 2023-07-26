@@ -36,17 +36,6 @@ class Note {
         return $stmt->rowCount() > 0;
     }
 
-    // public function delete($noteId, $userId) {
-    //     $sql = "DELETE FROM notes WHERE id = $noteId AND user_id = $userId";
-		
-	// 	if($this->conn->query($sql) == true) {
-	// 		echo "Data Deleted Successfully";
-	// 	}else{
-	// 		echo "Error: ".$sql ."<br/>".$this->conn->error;
-	// 	}
-    // }
-
-
     public function getById($noteId) {
         $stmt = $this->conn->prepare("SELECT * FROM notes WHERE id = :note_id");
         $stmt->bindParam(":note_id", $noteId, PDO::PARAM_INT);

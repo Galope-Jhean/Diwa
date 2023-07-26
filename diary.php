@@ -158,7 +158,7 @@ $username = $_SESSION['username'];
                                 <i class="far fa-regular fa-eye"></i>
                             </button>
                         </a>
-                        <form action="diary.php" method="POST" style="display: inline;">
+                        <form action="diary.php" method="POST" style="display: inline;" onsubmit="return confirmDelete(<?php echo $note['id']; ?>)">
                             <input type="hidden" name="note_id" value="<?php echo $note['id']; ?>">
                             <input type="hidden" name="action" value="delete">
                             <button type="submit" style="font-size: 15px"><i class="fa fa-solid fa-trash"></i></button>
