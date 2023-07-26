@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($result) {
         // Registration successful, redirect to login page
-        header("Location: login.php");
+        echo "<script>alert('User Registered Succesfully, Welcome to DIWA'); setTimeout(function() { window.location.href = 'login.php'; }, 100);</script>";
         exit;
     } else {
         // Registration failed

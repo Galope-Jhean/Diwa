@@ -9,10 +9,10 @@ form.addEventListener('submit', function (event) {
     if(username === '' || password === '' || confirmPassword === ''){
         event.preventDefault();
         alert("Please fill in all required fields.");
-    } else {
-        if (password !== confirmPassword) {
-            event.preventDefault();
-            alert('Passwords do not match. Please re-enter the passwords.');
-        }
+    }
+
+    if (password !== confirmPassword) {
+        event.preventDefault();
+        alert('Passwords do not match. Please re-enter the passwords.');
     }
 });
